@@ -39,14 +39,6 @@ before_install:
 - chmod +x gradle/wrapper/gradle-wrapper.jar
 - chmod +x gradlew
 before_script:
-#  - ls -lh
-#  - git clone https://github.com/hollaus/opencv_libs.git OpenCV-android-sdk
-- ls -lh
-- git clone https://github.com/hollaus/opencv_libs.git opencv_libs
-- cd app/src/main
-- ln -s ../../../opencv_libs/sdk/native/libs jniLibs
-- ln -s ../../../opencv_libs/sdk/native/jni/include include
-- cd ../../..
 #  unfortunately we do not have abi for android-27. Tested images can be found here:
 #  https://stackoverflow.com/questions/45100298/how-to-setup-an-emulator-running-api-25-using-a-build-matrix-on-travis-ci
 #  TODO: test other images as well
